@@ -3,11 +3,11 @@ import Logo from "../imgs/Logo.png"
 
 const Card = (props) => {
     return(
-        <div class="card mx-auto" width="18rem">
-            <img class="card-img-top" src={Logo} width={20} height={100} alt="sanitarios campana"/>
-        <div class="card-body">
-            <h5 class="card-title">Lavatorios</h5>
-            <p class="card-text">Mueble colgante para lavatorio</p>
+        <div className="card mx-auto" width="18rem">
+            <img className="card-img-top" src={props.images} width={20} height={100} alt="producto"/>
+        <div className="card-body">
+            <h5 className="card-title">{props.title}</h5>
+            <p className="card-text">{props.description}</p>
         </div>
     </div>
     );

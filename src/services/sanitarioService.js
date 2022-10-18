@@ -11,3 +11,15 @@ export const getProductos = async () => {
           throw error; 
         });
 }
+
+export const getProducto = async (id) => {
+  return axios.get(`https://dummyjson.com/products/${id}`)
+      .then((res) => {
+          console.log(res.data)
+          return res.data
+      })
+      .catch(error => {
+        console.log(error)
+        throw error; 
+      });
+}

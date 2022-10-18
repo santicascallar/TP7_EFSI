@@ -1,56 +1,40 @@
 import React from "react";
-import Logo from "../imgs/Logo.png"
+import logo_byn from "../imgs/logo_byn.png";
+import hola2 from "../imgs/4735423.png";
+import hola3 from "../imgs/1782765.png";
+import tel from "../imgs/tel.png";
+import "../../src/styles.css";
 
-/*const Navbar = () => {
+const Footer = () => {
     return(
-        <footer class="bg-dark">
-        <div class="container py-2">
-          <div class="row">
-            <div class="col-12 col-md-6">
-               <h4 class="textoBlanco">Siguenos</h4><br/>
-                <p class="textoBlanco">
-                  <a href="https://www.instagram.com/?hl=es-la" target="_blank" title="Instagram">
-                   <img class="tamLogos" src={}/> 
-                  </a>
-                  <a href="https://es-la.facebook.com/" target="_blank" title="Facebook"> 
-                   <img class="tamLogos" src="imagenes/logo facebook.png"/> 
-                  </a>
-                  <a href="https://www.google.com/intl/es/gmail/about/#" target="_blank" title="Gmail"> 
-                    <img class="tamLogos2" src="imagenes/logo gmail.png"> 
-                   </a>
-                  <a href="https://twitter.com/?lang=es" target="_blank" title="Twitter">
-                   <img class="tamLogos2" src="imagenes/logo twitter.png"> 
-                  </a>
-               </p>
-               <p class="textoBlanco"> Todas nuestras redes sociales</p>
-            
-            </div>
-            <div class="col-12 col-md-6">
-             <h4 class="textoBlanco">Móvil</h4><br/>
-             <p class="textoBlanco">
-              <a href="https://play.google.com/store/apps/details?id=com.sensacine.android&hl=es_AR&gl=US" target="_blank" title="Facebook"> 
-                <img class="tamLogos" src="imagenes/logo android.png"> 
-               </a>
-               <a href="https://apps.apple.com/ar/app/sensacine-cine-y-series/id374013343" target="_blank" title="Facebook"> 
-                <img class="tamLogos3" src="imagenes/logo apple.png"> 
-               </a>
-             </p>
-             <p class="textoBlanco"> También nos puedes encontrar aquí</p>
-            </div>
+        <footer className="bg-dark">
+    <div className="container py-2">
+      <div className="row">
+        <div className="col-12 col-md-4">
+          <p className="texto3">
+            <img src={logo_byn} width="100" height="110" alt="ips"/>
+          </p>
+        </div>
+        <div className="col-12 col-md-4 py-4">
+          <p className="texto">
+            <img src={hola2} width="25" height="28" alt="ips"/> 
+            Beiro 3300 - Villa del Parque
+          </p>
+          <p className="texto">
+          <img src={hola3} width="25" height="28" alt="ips"/> 
+          contacto@sanitarioscampana.com.ar
+          </p>
+        </div>
+        <div className="col-12 col-md-4 py-5">
+          <h3 className="texto2">
+            <img src={tel} width="25" height="29" alt="ips"/> 
+            4503-6015
+          </h3>
         </div>
       </div>
-        <div class="container py-2">
-          <div class="row">
-            <div class="col-12">
-              <p class="textoBlanco">
-               <img src="imagenes/logo-sensacine.svg" width="250" height="50" title="logo">
-               <br/>Copyright Sensacine 2021
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+    </div>
+  </footer>
     );
 }
 
-export default Navbar;*/
+export default Footer;
