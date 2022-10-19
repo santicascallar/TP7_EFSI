@@ -1,32 +1,16 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Card from "../components/Card";
-import { useState, useEffect } from "react";
-import { getProductos } from "../services/sanitarioService";
+import Carousel from "../components/Carousel";
+import ListaCards from "../components/ListaCards";
+import FooterMarcas from "../components/FooterMarcas";
 
 const Home = () => {
-    const [productos, setProductos] = useState([])
-
-    useEffect(() =>{
-      getProductos().then(data => {setProductos(data)
-        console.log(data)
-    })
-    },[]);
-
     return (
       <div>
-          <Navbar/>
-          <div className="container">
-            <p>
-              Tp7 - EFSI
-            </p>
-
-            
-          </div>
-          <Footer/>
+        <Carousel/>
+        <ListaCards/>
+        <FooterMarcas/>
       </div>
     );
 }
   
-  export default Home;
+export default Home;
   

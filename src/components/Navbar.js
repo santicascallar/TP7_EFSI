@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../imgs/Logo.png";
 
 const Navbar = () => {
@@ -20,7 +21,7 @@ const Navbar = () => {
                 <a className="nav-link" href="ss">QUIENES SOMOS<span className="sr-only">(current)</span></a>
               </li>
               <li className="nav-item active">
-                <a className="nav-link" href="aa">PRODUCTOS<span className="sr-only">(current)</span></a>
+                <Link className="nav-link" to="/Productos">PRODUCTOS</Link>
               </li>
             <li className="nav-item active">
                 <a className="nav-link" href="a">CONTACTO<span className="sr-only">(current)</span></a>
