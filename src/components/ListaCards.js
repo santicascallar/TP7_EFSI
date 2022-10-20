@@ -20,11 +20,11 @@ const ListaCards = () => {
     },[]);
 
     return (
-        <div class="container">
-          <h5 class="py-3">Productos destacados</h5>
+        <div className="container">
+          <h5 className="py-3">Productos destacados</h5>
             <div id="seccion1">
-              <div class="row">
-              <div class="col-12 col-md-4 py-4">
+              <div className="row">
+              <div className="col-12 col-md-4 py-4">
                 {productos.map((producto) => {
                   if(producto.id < 10) {
                     return(
@@ -39,7 +39,7 @@ const ListaCards = () => {
                 })} 
               </div>
 
-              <div class="col-12 col-md-4 py-4">
+              <div className="col-12 col-md-4 py-4">
               {productos.map((producto) => {
                   if(producto.id > 10 && producto.id < 20){
                     return(
@@ -50,7 +50,7 @@ const ListaCards = () => {
                 })} 
               </div>
 
-              <div class="col-12 col-md-4 py-4">
+              <div className="col-12 col-md-4 py-4">
               {productos.map((producto) => {
                   if(producto.id > 20) {
                     return(

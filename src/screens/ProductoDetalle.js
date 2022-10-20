@@ -1,6 +1,4 @@
-import Navbar from "../components/Navbar";
 import FooterMarcas from "../components/FooterMarcas";
-import Footer from "../components/Footer";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
@@ -29,20 +27,12 @@ const ProductoDetalle = () => {
 
     return (
       <div>
-        <Navbar/>
-        <div>
-            {producto.map((product) => {
-                return(
-                    <li key={product.id}>
-                        <h1> Titulo {product.title}</h1>
-                        <h2> Descripción {product.description}</h2>
-                    </li>
-                );                  
-            })}
+        <div className="container py-4">
+            <h1> Titulo {producto.title}</h1>
+            <h2> Descripción {producto.description}</h2>
+            <img className="card-img-top" src={producto.thumbnail} width={500} height={600} alt="producto"/>
         </div>
-
         <FooterMarcas/>
-        <Footer/>
       </div>
     );
 }
