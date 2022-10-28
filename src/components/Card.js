@@ -13,7 +13,7 @@ const Card = (props) => {
         <div className="card-body">
             <h5 className="card-title">{props.title}</h5>
             <p className="card-text">{props.description}</p>
-            <button onClick={()=>redirigir(`ProductoDetalle/${props.id}`)} className="btn btn-primary">Detalles</button>
+            <button onClick={()=>redirigir(`/${props.id}`)} className="btn btn-primary">Detalles</button>
         </div>
     </div>
     );

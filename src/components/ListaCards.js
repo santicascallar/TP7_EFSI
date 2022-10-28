@@ -11,7 +11,6 @@ const ListaCards = () => {
       const obtenerProductos = async () => {
         const url = 'https://dummyjson.com/products';
         const result = await axios.get(url);
-        console.log(result.data.products);
         setProductos(result.data.products);
       }
 

@@ -1,4 +1,3 @@
-import FooterMarcas from "../components/FooterMarcas";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
@@ -13,15 +12,12 @@ const ProductoDetalle = () => {
 
         const url = `https://dummyjson.com/products/${productoId}`;
         const result = await axios.get(url);
-        console.log(result.data);
         setProducto(result.data);
       }
 
       obtenerProducto()
       
     },[productoId]);
-
-    console.log(producto);
 
     return (
       <div>
@@ -37,7 +33,6 @@ const ProductoDetalle = () => {
             <h3>Stock Disponible: {producto.stock}</h3>
         </div>
         </div>
-        <FooterMarcas/>
       </div>
     );
 }

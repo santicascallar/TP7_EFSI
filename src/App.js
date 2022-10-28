@@ -5,6 +5,7 @@ import Home from './screens/Home';
 import Productos from './screens/Productos';
 import ProductoDetalle from './screens/ProductoDetalle';
 import Footer from './components/Footer';
+import FooterMarcas from "./components/FooterMarcas";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/Productos' element={<Productos/>}></Route>
-        <Route path='/ProductoDetalle/:productoId' element={<ProductoDetalle/>}></Route>
+        <Route path='/:productoId' element={<ProductoDetalle/>}></Route>
       </Routes>
+      <FooterMarcas/>
       <Footer/>
   </BrowserRouter>
   );
