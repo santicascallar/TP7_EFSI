@@ -1,24 +1,24 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route,} from "react-router-dom";
-import Navbar from './components/Navbar';
-import Home from './screens/Home';
-import Productos from './screens/Productos';
-import ProductoDetalle from './screens/ProductoDetalle';
-import Footer from './components/Footer';
-import FooterMarcas from "./components/FooterMarcas";
+import './App.css';
+import Home from './views/Home';
+import Productos from './views/Productos';
+import ProductoDetalle from './views/ProductoDetalle';
+import Layout from './components/Layout';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar/>
-      <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/Productos' element={<Productos/>}></Route>
-        <Route path='/:productoId' element={<ProductoDetalle/>}></Route>
-      </Routes>
-      <FooterMarcas/>
-      <Footer/>
-  </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index path="/" element={<Home />}/>
+            <Route path="/Productos" element={<Productos />}/>
+            <Route path="/:productoId" element={<ProductoDetalle />}/>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
