@@ -10,9 +10,9 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse d-flex" id="navbarTogglerDemo01">
-            <a className="navbar-brand" href="index.html">
+            <p className="navbar-brand">
                 <img src={Logo} width="100" height="110" alt="sanitarios campana"/>
-            </a>
+            </p>
             <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
               <li className="nav-item active">
                 <Link className="nav-link" to="/">INICIO</Link>
